@@ -5,31 +5,38 @@ import Collapse from './components/Collapse';
 
 const App = () => {
     return (
-        <div>
-            <div className="card-group">
-                <Collapse href="collapseExample1">
-                    <Card
-                        cardTitle="NASA"
-                        cardText="This is the first card with supporting text below"
-                        updatedTime="1 min ago"
-                        image="https://picsum.photos/id/1002/200/300" />
-                </Collapse>
+        <div className="container">
+            <div className="card-group w-100">
+                <div className="row">
+                    <div className="col">
+                        <Collapse href="collapseExample1">
+                            <Card
+                                cardTitle="NASA"
+                                cardText="This is the first card with supporting text below"
+                                updatedTime="1 min ago"
+                                image="https://picsum.photos/id/1002/200/300" />
+                        </Collapse>
+                    </div>
+                    <div className="col">
+                        <Collapse href="collapseExample2">
+                            <Card
+                                cardTitle="Gazelle"
+                                cardText="This is the second card with supporting text below"
+                                updatedTime="2 min ago"
+                                image="https://picsum.photos/id/1003/200/300" />
+                        </Collapse>
+                    </div>
+                    <div className="col">
+                        <Collapse href="collapseExample3">
+                            <Card
+                                cardTitle="Winter"
+                                cardText="This is the third card with supporting text below "
+                                updatedTime="3 min ago"
+                                image="https://picsum.photos/id/1004/200/300" />
+                        </Collapse>
+                    </div>
+                </div>
 
-                <Collapse href="collapseExample2">
-                    <Card
-                        cardTitle="Gazelle"
-                        cardText="This is the second card with supporting text below"
-                        updatedTime="2 min ago"
-                        image="https://picsum.photos/id/1003/200/300" />
-                </Collapse>
-
-                <Collapse href="collapseExample3">
-                    <Card
-                        cardTitle="Winter"
-                        cardText="This is the third card with supporting text below "
-                        updatedTime="3 min ago"
-                        image="https://picsum.photos/id/1004/200/300" />
-                </Collapse>
             </div>
         </div>
     );
